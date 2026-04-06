@@ -1,0 +1,430 @@
+    
+
+/*File Path (link):- <link rel="stylesheet" href="Images/infra_support.css"> */
+
+    /* login page background image */
+    .mainbg{
+     background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    }
+
+
+/* 🔥 Top Mode */
+.top-nav-mode .main-sidebar {
+    display: none !important;
+}
+
+.top-nav-mode .content-wrapper {
+    margin-left: 0 !important;
+}
+
+.top-nav-mode #topMenu {
+    display: flex !important;
+}
+
+.top-nav-mode [data-widget="pushmenu"] {
+    display: none !important;
+}
+
+/* Sidebar mode */
+.sidebar-mini .welcome-text {
+    margin-left: 10px;
+}
+
+/* Top nav mode */
+.top-nav-mode .welcome-text {
+    margin-left: 0;
+    padding-left: 8px;
+}
+
+/* Hide sidebar button in top mode */
+.top-nav-mode .sidebar-btn {
+    display: none;
+}
+
+    /*spaceing for mas logo header*/
+.top-nav-mode .main-header {
+    margin-left: 0 !important;
+}
+
+
+/* Hide logo in sidebar mode */
+#masLogo {
+    display: none;
+}
+
+/* Show logo only in top nav mode */
+.top-nav-mode #masLogo {
+    display: flex !important;
+}
+
+
+
+#maslogo {
+    display: none;
+}
+
+.top-nav-mode #maslogo {
+    display: flex !important;
+}
+
+
+
+
+
+
+.main-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.top-navbar {
+    position: sticky;
+    top: 60px;
+    z-index: 998;
+}
+
+
+.form-check-input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    transform: scale(1.0);
+    cursor: pointer;
+}
+
+
+
+/* 1.sidebar circle size & 2.table th middle align & 3.nav-sidebar border-bottom line */
+.fs8{
+                font-size: 8px !important;
+         }
+         label:not(.form-check-label):not(.custom-file-label) {
+  font-weight: 400 !important;
+}
+      .table thead th {
+    vertical-align: middle !important;
+}
+
+        .nav-sidebar .nav-item {
+    border-bottom: 1px solid #1a67b7;
+}
+
+
+/*all pages table border color*/
+  .table thead th,  
+  .table tbody tr td {
+    border: 1px solid #000;
+    
+}
+.table thead th{
+    background-color: #dde4eb;
+}
+
+.dark-mode .table thead th{
+    color:#000!important;
+}
+
+
+/*center align of nav-bar text*/
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+/*nav sidebar text color when page is active */
+.nav-link.active,
+.nav-link.active p,
+.nav-link.active i {
+    background-color: transparent !important;
+    color: #f39122 !important;
+}
+
+
+    /*only for calendar dark mode css */
+.dark-mode input[type="date"],
+.dark-mode input[type="datetime-local"],
+.dark-mode input[type="month"],
+.dark-mode input[type="time"]{
+    color-scheme: dark;
+    background-color:#343a40;
+    color:#fff;
+    border-color:#555;
+}
+
+
+    /*Button color default when change to dark mode*/
+.dark-mode .btn-primary{
+    background-color:#0d6efd;
+    border-color:#0d6efd;
+    color:#fff;
+}
+
+.dark-mode .btn-success{
+    background-color:#198754;
+    border-color:#198754;
+    color:#fff;
+}
+
+.dark-mode .btn-danger{
+    background-color:#dc3545;
+    border-color:#dc3545;
+    color:#fff;
+}
+
+.dark-mode .btn-info{
+    background-color:#0dcaf0;
+    border-color:#0dcaf0;
+    color:#fff;
+
+
+}
+
+
+    /* Select dropdown arrow fix for dark mode */
+.dark-mode .form-select{
+  background-color:#343a40;
+  color:#fff;
+  border-color:#6c757d;
+
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+
+  background-repeat:no-repeat;
+  background-position:right .75rem center;
+  background-size:16px 12px;
+}
+
+
+    /*navbar dark mode */
+.dark-mode .main-header{
+  background-color:#343a40;
+}
+
+.dark-mode .main-header .nav-link{
+  color:#fff;
+}
+
+
+    /*only for hide white line after header*/
+.main-header{
+    border-bottom: none !important;
+}
+
+    /*close button color*/
+.dark-mode .btn-close{
+    filter: invert(1);
+}
+
+
+.dark-mode .pagination .page-link{
+    background-color:#343a40;
+    color:#ffffff;
+    border-color:#495057;
+}
+
+.dark-mode .pagination .page-item.active .page-link{
+    background-color:#0d6efd !important;
+    border-color:#0d6efd !important;
+    color:#ffffff !important;
+}
+
+
+
+
+
+
+/* Global Font Size */
+body{
+    font-size:12px;
+    font-family: Verdana, Arial, Tahoma;
+}
+
+/* Table font */
+.table{
+    font-size:12px;
+}
+
+/* Form inputs */
+.form-control,
+.form-select{
+    font-size:12px;
+}
+
+/* Sidebar menu */
+.nav-sidebar .nav-link{
+    font-size:12px;
+}
+
+/* Navbar */
+.navbar-nav .nav-link{
+    font-size:12px;
+}
+
+/* Buttons */
+.btn{
+    font-size:12px;
+}
+
+/* Modal text */
+.modal-body,
+.modal-title{
+    font-size:12px;
+}
+
+/*pagination*/
+.page-item, .page-link{
+    font-size: 12px;
+}
+
+/*Tables*/
+.table td, .table th {
+    padding: 6px;
+}
+
+/*Light & Dark mode*/
+.dropdown-item{
+    font-size: 12px;
+}
+
+/*Main header page text (Dashboard...)*/
+.content-header h1{
+    font-size: 18px;
+    margin-top: 3px;
+
+}
+.content-header{
+    padding: 10px 15px;
+}
+
+/*Side-bar heading*/
+.brand-link{
+    font-size: 18px;
+}
+
+.card {
+    margin: 0px 15px 15px 15px ! IMPORTANT;
+}
+
+
+
+
+
+/* REMOVE sidebar space in TOP NAV mode for footer */
+.top-nav-mode .content-wrapper,
+.top-nav-mode .main-footer,
+.top-nav-mode .main-header {
+    margin-left: 0 !important;
+}
+
+
+/* Top nav alignment for doepdown menu text*/
+.dropdown-menu .dropdown-item {
+    display: flex;
+    align-items: center;
+    
+}
+
+/* Icon size consistency */
+.dropdown-menu .dropdown-item i {
+    width: 6px;
+    text-align: center;
+}
+
+
+/* Multi-level dropdown */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+/* Show on hover */
+.dropdown-submenu:hover .dropdown-menu {
+  display: block;
+}
+
+/* Fix dropdown parent */
+.dropdown-submenu {
+  position: relative;
+}
+
+/* Fix dropdown toggle arrow */
+.navbar .dropdown-toggle::after {
+  vertical-align: middle;
+  margin-left: 6px;
+  margin-top: 2px;
+}
+
+/* Push arrow to extreme right */
+.navbar .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.table tbody tr{
+    vertical-align: middle;
+}
+
+.line-height{
+    line-height: 25px;
+}
+
+.text-color {
+  color: #fff !important;
+}
+
+
+
+.maslogo{
+    height:30px; 
+    margin-right:8px;
+}
+.sidebar{
+    background-color: #044a92;
+}
+
+.elevation-3{
+    box-shadow: none !important;
+}
+
+.brand-link, .form-control-sidebar, .btn-sidebar{
+    background-color: #044a92 !important;
+}
+
+a {
+    color: #044a92;
+}
+
+.brand-link .brand-image {
+    border-radius: 0px;
+}
+.nav-link {
+    box-shadow: none !important;
+}
+
+.bg-dark {
+    background-color: #044a92 !important;
+}
+
+body.top-nav-mode #sidebarMenu {
+    display: none;
+}
+
+body.top-nav-mode #topMenu {
+    display: block;
+}
+
+
+
+
+
