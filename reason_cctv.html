@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title> MAS Financial Services Ltd </title>
+       <link href="Images/bootstrap.min.css" rel="stylesheet">
+      <script src="Images/bootstrap.bundle.min.js"></script>
+      <link rel="icon" type="Images/png" href="Images/scroll_logo.png">
+      <!-- Google Font: Source Sans Pro -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+      <link rel="stylesheet" href="images/line-awesome/css/line-awesome.min.css">
+      <link rel="stylesheet" href="images/fontawesome/css/all.min.css">
+      <!-- Theme style -->
+      <link rel="stylesheet" href="dist/css/adminlte.min.css">
+      <link rel="stylesheet" href="Images/infra_support.css">
+
+   </head>
+   
+   <body class="hold-transition sidebar-mini layout-fixed">
+      <!-- Site wrapper -->
+      <div class="wrapper">
+         <!-- Navbar -->
+         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+
+           <!-- Left navbar links -->
+            <ul class="navbar-nav align-items-center">
+
+<a href="#" class="navbar-brand d-flex align-items-center" >
+      <img src="Images/logo1.png" id="maslogo" class="maslogo">
+          </a>
+
+               <!-- Menu button -->
+   <li class="nav-item sidebar-btn">
+      <a class="nav-link" data-widget="pushmenu" href="#">
+         <i class="fas fa-bars mt-0"></i>
+      </a>
+   </li>
+
+   <!-- Welcome text -->
+   <li class="nav-item d-none d-sm-inline-block">
+                  <a class="nav-link">Welcome to MAS Financial Services Limited</a>
+               </li>
+
+            </ul>
+                        <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+               <!-- Navbar Search -->
+               <!-- Messages Dropdown Menu -->
+               
+               <li class="nav-item">
+                  <div class="user-panel d-flex">
+                     <div class="image">
+                        <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                     </div>
+
+                     <div class="info d-none d-sm-block">
+                        <a href="#" class="d-block mt-1">Dhruval Sharma</a>
+                     </div>
+                      </div> 
+                        </li>
+
+                        <!--Top Navigation Bar button-->
+                        <li class="nav-item d-none d-sm-block">
+                              <a class="nav-link" href="#" onclick="toggleNavLayout()">
+                                 <i class="fa-solid fa-repeat"></i>
+                              </a>
+                           </li>
+                     
+                     <li class="nav-item">
+                  <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                  <i class="fas fa-expand-arrows-alt"></i>
+                  </a>
+               </li>
+                       
+                        
+                        <!-- light-dark mode-->
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                            <i id="themeIcon" class="fa-solid fa-sun"></i>
+                          </a>
+
+                          <ul class="dropdown-menu dropdown-menu-end">
+
+                            <li>
+                              <a class="dropdown-item" href="#" onclick="setTheme('light')">
+                                <i class="fa-solid fa-sun me-2"></i> Light
+                              </a>
+                            </li>
+
+                            <li>
+                              <a class="dropdown-item" href="#" onclick="setTheme('dark')">
+                                <i class="fa-solid fa-moon me-2"></i> Dark
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+
+                     <li class="nav-item">
+                  <a class="nav-link" data-widget="signout" href="login.html" role="button">
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                  </a>
+               </li>
+            </ul>
+         </nav>
+         <!-- /.navbar -->
+         <!-- Main Sidebar Container -->
+         <aside class="main-sidebar sidebar-dark-primary elevation-4 ">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-link">
+            <img src="Images/logo1.png" alt="logo1" class="brand-image img-circle elevation-3"  >
+            <span class="brand-text font-weight-light">Infra Support</span>
+            </a>
+            <!-- Sidebar -->
+            <div class="sidebar">
+               <!-- Sidebar user (optional) -->
+               <!-- SidebarSearch Form -->
+               <div class="form-inline mt-3">
+                  <div class="input-group" data-widget="sidebar-search">
+                    <input class="form-control form-control-sidebar" type="search" title="Search" placeholder="Search" aria-label="Search">
+                     <div class="input-group-append">
+                        <button class="btn btn-sidebar">
+                        <i title="Click to Search" class="fas fa-search fa-fw"></i>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <!-- Sidebar Menu -->
+               <nav class="mt-2">
+                  <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                     <!-- Add icons to the links using the .nav-icon class
+                        with font-awesome or any other icon font library -->
+                    <li class="nav-item">
+                        <a href="dashboard.html" class="nav-link">
+                           <i class="fa-solid fa-gauge"></i>
+                           <p>
+                              Dashboard            
+                           </p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="inquiry.html" class="nav-link">
+                           <i class="fa-solid fa-circle-question"></i>
+                           <p>
+                              Inquiry             
+                           </p>
+                        </a>
+                     </li>
+
+                     <!--System Complaint-->
+                     <li class="nav-item">
+                        <a href="system_complaint.html" class="nav-link">
+                           <i class="fa-solid fa-gears"></i>
+                           <p>
+                              System Complaint
+                              <i class="right fas fa-angle-left"></i>
+                           </p>
+                        </a>
+
+                        <!--(in system complaint) Master dropdown-->
+                        <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="#" class="nav-link">
+                                  <i class="fa-solid fa-pencil ms-2"></i>
+                                 <p>Master</p>
+                                 <i class="right fas fa-angle-left"></i>
+                              </a>
+
+                              <ul class="nav nav-treeview menu-open">
+                           <li class="nav-item">
+                              <a href="category_master.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Complaint Category</p>
+                              </a>
+                               <a href="type_master.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Complaint type</p>
+                              </a>
+                               <a href="solveby_master.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>SolveBy</p>
+                              </a>
+                              <a href="location_master.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Location</p>
+                              </a>
+                              <a href="vendor_master.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Vendor</p>
+                              </a>
+                              <a href="product_master.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Product</p>
+                              </a>
+                              <a href="productbrand_master.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Product Brand</p>
+                              </a>
+                              <a href="closeremark_master.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Close Remark</p>
+                              </a>
+                           </li>
+                        </li>
+                     </ul>
+                              <!--(in system complaint) Complaint-->
+                           <li class="nav-item">
+                              <a href="complaint_system.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Complaint</p>
+                              </a>
+                           </li>
+
+                           <!--(in system complaint) infra support-->
+                           <li class="nav-item">
+                              <a href="infraSupport_complaint.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Infra Support</p>
+                              </a>
+                           </li>
+
+                           <!--(in system complaint) BA tray-->
+                           <li class="nav-item">
+                              <a href="BA_Tray.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>BA Tray</p>
+                              </a>
+                           </li>
+
+                           <!--(in system complaint) Branch Operations-->
+                           <li class="nav-item">
+                              <a href="Branch_Operations.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Branch Operations</p>
+                              </a>
+                           </li>
+
+                        </li>
+                     </ul>
+
+                      
+
+                     <li class="nav-item">
+                        <a href="infrastructure_complaint.html" class="nav-link">
+                           <i class="fa-solid fa-building"></i>
+                           <p>
+                              Infrastructure Complaint
+                              <i class="right fas fa-angle-left"></i>
+                           </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="inquiry_infrastructure.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Inquiry</p>
+                              </a>
+                               <a href="complaint_infrastructure.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Complaint</p>
+                              </a>
+                               <a href="receive_solve.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Receive/Solve</p>
+                              </a>
+                           </li>
+                        </li>
+                     </ul>
+
+                     <li class="nav-item">
+                        <a href="software_rights.html" class="nav-link">
+                           <i class="fa-solid fa-check-to-slot"></i>
+                           <p>
+                              Software Rights
+                              <i class="right fas fa-angle-left"></i>
+                           </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="inquiry_software.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Inquiry</p>
+                              </a>
+                               <a href="requisition_software.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Requisition</p>
+                              </a>
+                              <a href="hod_approval.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>HOD Approval</p>
+                              </a>
+                              <a href="admin_approval.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Admin Approval</p>
+                              </a>
+                           </li>
+                        </li>
+                     </ul>
+
+                      <!--House keeping-->
+                     <li class="nav-item">
+                        <a href="#" class="nav-link">
+                           <i class="fa-solid fa-gears"></i>
+                           <p>
+                              House Keeping
+                              <i class="right fas fa-angle-left"></i>
+                           </p>
+                        </a>
+
+                           <!--Master (House keeping)-->
+                        <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="#" class="nav-link">
+                                 <i class="fa-solid fa-pencil ms-2"></i>
+                                 <p>Master</p>
+                                 <i class="right fas fa-angle-left"></i>
+                              </a>
+
+                              <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="Asset_Master.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Asset</p>
+                              </a>
+                              <a href="Assign_Master.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Assign</p>
+                              </a>
+
+                           </li>                      
+                        </li>
+                     </ul>
+                                    <!--inquiry (House keeping)-->
+                                 <li class="nav-item">
+                              <a href="inquiry_house.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Inquiry</p>
+                              </a>
+                           </li>
+
+                                    <!--planning (House keeping)-->
+                                 <li class="nav-item">
+                              <a href="planning_house.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Planning</p>
+                              </a>
+                           </li>
+
+                                    <!--execution (House keeping)-->
+                                 <li class="nav-item">
+                              <a href="execution_house.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Execution</p>
+                              </a>
+                           </li>
+
+                                    <!--Management Marking (House keeping)-->
+                                 <li class="nav-item">
+                              <a href="management_marking.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Management Marking</p>
+                              </a>
+                           </li>
+
+                                    <!--Scrp marking (House keeping)-->
+                                 <li class="nav-item">
+                              <a href="scrp_marking.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Scrp Marking</p>
+                              </a>
+                           </li>
+
+                              <!--Reports (House keeping)-->
+                           <li class="nav-item">
+                              <a href="#" class="nav-link">
+                                 <i class="fa-solid fa-file-lines ms-2"></i>
+                                 <p>Reports</p>
+                                 <i class="right fas fa-angle-left"></i>
+                              </a>
+
+                              <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="Detail_Summary_reports.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Detail/Summary</p>
+                              </a>
+                              <a href="Asset_Office_reports.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Asset at office</p>
+                              </a>
+
+                           </li>                      
+                        </li>
+                     </ul></ul>
+
+
+                        <!--Report-->
+                     <li class="nav-item">
+                        <a href="#" class="nav-link">
+                           <i class="fa-solid fa-file-lines"></i>
+                           <p>
+                              Report
+                              <i class="right fas fa-angle-left"></i>
+                           </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="complaint_report.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Complaint Report</p>
+                              </a>
+                               <a href="Product_Details_report.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Product Details Report</p>
+                              </a>
+                              <a href="Login_History_report.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Login History</p>
+                              </a>
+                           </li>
+                        </li>
+                     </ul>
+
+                        <!--CCTV-->
+                     <li class="nav-item menu-open">
+                        <a href="#" class="nav-link">
+                           <i class="fa-solid fa-video"></i>
+                           <p>
+                              CCTV
+                              <i class="right fas fa-angle-left"></i>
+                           </p>
+                        </a>
+
+                           <!--CCTV Master (CCTV)-->
+                        <ul class="nav nav-treeview">
+                           <li class="nav-item menu-open">
+                              <a href="#" class="nav-link">
+                                 <i class="fa-regular fa-circle-dot ms-2"></i>
+                                 <p>CCTV Master</p>
+                                 <i class="right fas fa-angle-left"></i>
+                              </a>
+
+                              <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="action_cctv.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Action</p>
+                              </a>
+                              <a href="reason_cctv.html" class="nav-link active">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Reason</p>
+                              </a>
+                              <a href="Branch_Wise_Mapping_cctv.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Branch Wise Mapping</p>
+                              </a>
+                           </li>                      
+                        </li>
+                        
+                     </ul>
+
+                              <!--CCTV Reporting (CCTV)-->
+                           <li class="nav-item">
+                              <a href="#" class="nav-link">
+                                 <i class="fa-regular fa-circle-dot ms-2"></i>
+                                 <p>CCTV Reporting</p>
+                                 <i class="right fas fa-angle-left"></i>
+                              </a>
+
+                              <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="intitial_reporting_cctv.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Initial Reporting</p>
+                              </a>
+                              <a href="initial_reporting_action_cctv.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Initial Reporting Action</p>
+                              </a>
+
+                           </li>                      
+                        </li></ul>
+
+                           <!--CCTV Reports (CCTV)-->
+                        <li class="nav-item">
+                              <a href="#" class="nav-link">
+                                 <i class="fa-regular fa-circle-dot ms-2"></i>
+                                 <p>CCTV Reports</p>
+                                 <i class="right fas fa-angle-left"></i>
+                              </a>
+
+                              <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="initial_report_cctv.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Initial Reporting Report</p>
+                              </a>
+                              <a href="mapping_report_cctv.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Mapping Report</p>
+                              </a>
+
+                           </li>                      
+                        </li></ul></li></li></ul>
+
+                              <!--Andorid APK-->
+                           <li class="nav-item">
+                        <a href="#" class="nav-link">
+                           <i class="fa-brands fa-android"></i>
+                           <p>
+                              Android APK
+                              <i class="right fas fa-angle-left"></i>
+                           </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="share_file_android.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Share File</p>
+                              </a>
+                               <a href="inquiry_android.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Inquiry</p>
+                              </a>
+                               </li>
+                        </li>
+                     </ul>
+
+                         <!--Admin-->
+                     <li class="nav-item">
+                        <a href="#" class="nav-link">
+                           <i class="fa-solid fa-circle-user"></i>
+                           <p>
+                              Admin
+                              <i class="right fas fa-angle-left"></i>
+                           </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="menu_master_admin.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Menu Master</p>
+                              </a>
+                               <a href="menu_rights_admin.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Menu Rights</p>
+                              </a>
+                              <a href="reports_menu_rights_admin.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon fs8"></i>
+                                 <p>Reports Menu Rights</p>
+                              </a>
+                               </li>
+                        </li>
+                     </ul>      
+                        
+
+               </nav>
+               <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+         </aside>
+
+
+         <!-- Top Navigation Bar -->
+
+<nav class="navbar navbar-expand navbar-dark bg-dark d-none" id="topMenu">
+  <div class="container-fluid">
+
+    <ul class="navbar-nav">
+
+      <!-- Dashboard -->
+      <li class="nav-item">
+        <a href="dashboard.html" class="nav-link">
+          <i class="fa-solid fa-gauge"></i> Dashboard
+        </a>
+      </li>
+
+      <!-- Inquiry -->
+      <li class="nav-item">
+        <a href="inquiry.html" class="nav-link">
+          <i class="fa-solid fa-circle-question"></i> Inquiry
+        </a>
+      </li>
+
+      <!-- System Complaint -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          <i class="fa-solid fa-gears"></i> System Complaint
+        </a>
+
+        <ul class="dropdown-menu">
+
+          <!-- Master -->
+          <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">Master</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="category_master.html">Complaint Category</a></li>
+              <li><a class="dropdown-item" href="type_master.html">Complaint Type</a></li>
+              <li><a class="dropdown-item" href="solveby_master.html">SolveBy</a></li>
+              <li><a class="dropdown-item" href="location_master.html">Location</a></li>
+              <li><a class="dropdown-item" href="vendor_master.html">Vendor</a></li>
+              <li><a class="dropdown-item" href="product_master.html">Product</a></li>
+              <li><a class="dropdown-item" href="productbrand_master.html">Product Brand</a></li>
+              <li><a class="dropdown-item" href="closeremark_master.html">Close Remark</a></li>
+            </ul>
+          </li>
+
+          <li><a class="dropdown-item" href="complaint_system.html">Complaint</a></li>
+          <li><a class="dropdown-item" href="infraSupport_complaint.html">Infra Support</a></li>
+          <li><a class="dropdown-item" href="BA_Tray.html">BA Tray</a></li>
+          <li><a class="dropdown-item" href="Branch_Operations.html">Branch Operations</a></li>
+
+        </ul>
+      </li>
+
+      <!-- Infrastructure Complaint -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          <i class="fa-solid fa-building"></i> Infrastructure Complaint
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="inquiry_infrastructure.html">Inquiry</a></li>
+          <li><a class="dropdown-item" href="complaint_infrastructure.html">Complaint</a></li>
+          <li><a class="dropdown-item" href="receive_solve.html">Receive/Solve</a></li>
+        </ul>
+      </li>
+
+      <!-- Software Rights -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          <i class="fa-solid fa-check-to-slot"></i> Software Rights
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="inquiry_software.html">Inquiry</a></li>
+          <li><a class="dropdown-item" href="requisition_software.html">Requisition</a></li>
+          <li><a class="dropdown-item" href="hod_approval.html">HOD Approval</a></li>
+          <li><a class="dropdown-item" href="admin_approval.html">Admin Approval</a></li>
+        </ul>
+      </li>
+
+      <!-- House Keeping -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          <i class="fa-solid fa-gears"></i> House Keeping
+        </a>
+
+        <ul class="dropdown-menu">
+
+          <!-- Master -->
+          <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">Master</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Asset_Master.html">Asset</a></li>
+              <li><a class="dropdown-item" href="Assign_Master.html">Assign</a></li>
+            </ul>
+          </li>
+
+          <li><a class="dropdown-item" href="inquiry_house.html">Inquiry</a></li>
+          <li><a class="dropdown-item" href="planning_house.html">Planning</a></li>
+          <li><a class="dropdown-item" href="execution_house.html">Execution</a></li>
+          <li><a class="dropdown-item" href="management_marking.html">Management Marking</a></li>
+          <li><a class="dropdown-item" href="scrp_marking.html">Scrp Marking</a></li>
+
+          <!-- Reports -->
+          <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">Reports</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Detail_Summary_reports.html">Detail/Summary</a></li>
+              <li><a class="dropdown-item" href="Asset_Office_reports.html">Asset at office</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </li>
+
+      <!-- Report -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          <i class="fa-solid fa-file-lines"></i> Report
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="complaint_report.html">Complaint Report</a></li>
+          <li><a class="dropdown-item" href="Product_Details_report.html">Product Details Report</a></li>
+          <li><a class="dropdown-item" href="Login_History_report.html">Login History</a></li>
+        </ul>
+      </li>
+
+      <!-- CCTV -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+    <i class="fa-solid fa-video"></i> CCTV
+  </a>
+
+  <ul class="dropdown-menu">
+
+    <!-- CCTV Master -->
+    <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="#">CCTV Master</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="action_cctv.html">Action</a></li>
+        <li><a class="dropdown-item" href="reason_cctv.html">Reason</a></li>
+        <li><a class="dropdown-item" href="Branch_Wise_Mapping_cctv.html">Branch Wise Mapping</a></li>
+      </ul>
+    </li>
+
+    <!-- CCTV Reporting -->
+    <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="#">CCTV Reporting</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="intitial_reporting_cctv.html">Initial Reporting</a></li>
+        <li><a class="dropdown-item" href="initial_reporting_action_cctv.html">Initial Reporting Action</a></li>
+      </ul>
+    </li>
+
+    <!-- CCTV Reports -->
+    <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="#">CCTV Reports</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="initial_report_cctv.html">Initial Reporting Report</a></li>
+        <li><a class="dropdown-item" href="mapping_report_cctv.html">Mapping Report</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</li>
+
+      <!-- Android APK -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          <i class="fa-brands fa-android"></i> Android APK
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="share_file_android.html">Share File</a></li>
+          <li><a class="dropdown-item" href="inquiry_android.html">Inquiry</a></li>
+        </ul>
+      </li>
+
+      <!-- Admin -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          <i class="fa-solid fa-circle-user"></i> Admin
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="menu_master_admin.html">Menu Master</a></li>
+          <li><a class="dropdown-item" href="menu_rights_admin.html">Menu Rights</a></li>
+          <li><a class="dropdown-item" href="reports_menu_rights_admin.html">Reports Menu Rights</a></li>
+        </ul>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+
+         <!-- Content Wrapper. Contains page content -->
+         <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+               <div class="container-fluid">
+                  <div class="row mb-6">
+                     <div class="col-sm-6">
+                        <h1>Reason</h1>
+                     </div>
+                     <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                           <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
+                           <li class="breadcrumb-item active">CCTV Master</li>
+                           <li class="breadcrumb-item active">Reason</li>
+                        </ol>
+                     </div>
+                  </div>
+               </div>
+               <!-- /.container-fluid -->
+            </section>
+
+            
+            <!-- Main content -->
+            <section class="content">
+               <!-- Default box -->
+               <div class="card">
+                  <div class="card-body">
+
+                                           
+                    
+
+                     <div class="row">                                                                    
+                    <div class="col-md-3" >
+                        <div class="form-group" >
+                     <label>Reason</label>
+                     <input title="Enter Reason" class="form-control" type="text">
+                  </div></div>
+
+                  <div class="col-md-4 from-group d-flex align-items-center ">
+                  <label class="me-4 mb-0">Active</label>
+                  <div class="form-check form-check-inline">
+                       <input title="Active" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked>
+                     </div>
+                  </div>
+                        
+            
+                     <!-- Buttons-->
+                     <div class="col-md-12">
+                         <div class="form-group mb-0">
+                           <button title="Click to Save" class="btn btn-success me-2"><i class="fa-solid fa-floppy-disk me-2 "></i>Save</button>
+                           <button title="Click to Reset" class="btn btn-secondary"><i class="fa-solid fa-arrow-rotate-left me-2"></i>Reset</button>
+                      </div></div>
+
+             </div>
+                  </div></div>
+
+                                 <!--table-->
+                        <div class="card">
+                  <div class="card-body">
+
+                     <div class="row">
+                        
+                                 
+                        <div class="table-responsive">
+                         <table class="table table-bordered table-hover ">
+                            <thead>
+                              <tr class="text-center">
+                                <th>Sr. No.</th>
+                                <th>Reason</th>
+                                <th>Active</th>
+                                <th class="mw130">Edit/Delete</th>
+                              </tr>
+                            </thead>
+
+                            <tbody class="text-center">
+
+                           
+                                 <tr>
+                                   <td>1</td>
+                                   <td>NO ELECTRICITY</td>
+                                   <td><span class="badge rounded-pill text-bg-success p-2">True</span></td>
+                                  
+                                   <td>
+                                       <button type="button" title="Click to Edit" class="btn btn-info mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-pen-to-square"></div></button>
+                                       <button type="button" title="Click to Delete" class="btn btn-danger mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-trash-can"></div></button>
+                                    </td>
+                                 </tr>
+
+
+                                 
+                               <tr>
+                                <td>2</td>
+                                <td>NO INTERNET</td>
+                                <td><span class="badge rounded-pill text-bg-success p-2">True</span></td>                              
+                                <td>
+                                       <button type="button" title="Click to Edit" class="btn btn-info mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-pen-to-square"></div></button>
+                                       <button type="button" title="Click to Delete" class="btn btn-danger mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-trash-can"></div></button>
+                                 </td>
+                              </tr>
+
+
+                              
+                              <tr>
+                                <td>3</td>
+                                <td>HDD PROBLEM</td>
+                                <td><span class="badge rounded-pill text-bg-success p-2">True</span></td>                      
+                                <td>
+                                       <button type="button" title="Click to Edit" class="btn btn-info mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-pen-to-square"></div></button> 
+                                       <button type="button" title="Click to Delete" class="btn btn-danger mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-trash-can"></div></button>
+                                 </td>
+                              </tr>
+
+
+                                                 
+                              <tr>
+                                <td>4</td>
+                                <td>POWER SUPPLY PROBLEM</td>
+                                <td><span class="badge rounded-pill text-bg-success p-2">True</span></td>                               
+                                <td>
+                                       <button type="button" title="Click to Edit" class="btn btn-info mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-pen-to-square"></div></button> 
+                                       <button type="button" title="Click to Delete" class="btn btn-danger mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-trash-can"></div></button>
+                                 </td>
+                              </tr>
+
+
+                                      
+                              <tr>
+                                <td>5</td>
+                                <td>OFF BY BRANCH</td>
+                                <td><span class="badge rounded-pill text-bg-success p-2">True</span></td>                               
+                                <td>
+                                       <button type="button" title="Click to Edit" class="btn btn-info mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-pen-to-square"></div></button> 
+                                       <button type="button" title="Click to Delete" class="btn btn-danger mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-trash-can"></div></button>
+                                 </td>
+                              </tr>
+
+                              <tr>
+                                <td>6</td>
+                                <td>INSTALLATION PENDING</td>
+                                <td><span class="badge rounded-pill text-bg-success p-2">True</span></td>
+                                
+                                <td>
+                                       <button type="button" title="Click to Edit" class="btn btn-info mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-pen-to-square"></div></button> 
+                                       <button type="button" title="Click to Delete" class="btn btn-danger mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-trash-can"></div></button>
+                                 </td>
+                              </tr>
+
+                              <tr>
+                                <td>7</td>
+                                <td>BRANCH CHANGE</td>
+                                <td><span class="badge rounded-pill text-bg-success p-2">True</span></td>
+                                
+                                <td>
+                                       <button type="button" title="Click to Edit" class="btn btn-info mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-pen-to-square"></div></button> 
+                                       <button type="button" title="Click to Delete" class="btn btn-danger mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-trash-can"></div></button>
+                                 </td>
+                              </tr>
+
+                              <tr>
+                                <td>8</td>
+                                <td>DVR FAULT</td>
+                                <td><span class="badge rounded-pill text-bg-success p-2">True</span></td>
+                                
+                                <td>
+                                       <button type="button" title="Click to Edit" class="btn btn-info mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-pen-to-square"></div></button> 
+                                       <button type="button" title="Click to Delete" class="btn btn-danger mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-trash-can"></div></button>
+                                 </td>
+                              </tr>
+
+                              <tr>
+                                <td>9</td>
+                                <td>TECHNICAL PROBLEM</td>
+                                <td><span class="badge rounded-pill text-bg-success p-2">True</span></td>
+                                
+                                <td>
+                                       <button type="button" title="Click to Edit" class="btn btn-info mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-pen-to-square"></div></button> 
+                                       <button type="button" title="Click to Delete" class="btn btn-danger mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-trash-can"></div></button>
+                                 </td>
+                              </tr>
+
+                              <tr>
+                                <td>10</td>
+                                <td>NO EMPLOYEE</td>
+                                <td><span class="badge rounded-pill text-bg-success p-2">True</span></td>
+                                
+                                <td>
+                                       <button type="button" title="Click to Edit" class="btn btn-info mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-pen-to-square"></div></button> 
+                                       <button type="button" title="Click to Delete" class="btn btn-danger mr-2" class="btn btn-primary">
+                                       <div class="fa-solid fa-trash-can"></div></button>
+                                 </td>
+                              </tr>
+
+
+                              
+                            </tbody>
+                          </table>
+                         
+
+                          <div class="d-flex justify-content-between align-items-center">
+                                   <div class="mb-0 mt-1"> <!--mt-1  for alignment change in real file-->
+                                     Showing 1 to 10 of 200 entries
+                                   </div>
+
+                           <nav aria-label="Page navigation example ">
+                                <ul class="pagination justify-content-end mb-0">
+                                  <li class="page-item ">
+                                    <a class="page-link" href="#" aria-label="First">
+                                      <span aria-hidden="true">First</span>
+                                    </a>
+                                    </li>
+                                  <a class="page-link" href="#" aria-label="left">
+                                      <span aria-hidden="true"><i class="fa-solid fa-angle-left"></i></span>
+                                    </a>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="right">
+                                      <span aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
+                                    </a>
+                                  </li>
+                                  <li class="page-item ">
+                                    <a class="page-link" href="#" aria-label="Last">
+                                      <span aria-hidden="true">Last</span>
+                                    </a>
+                                    </li>
+                                </ul>
+                              </nav>
+                       </div>         
+</section>
+</div>
+            <!-- /.content -->
+         
+         <!-- /.content-wrapper -->
+         <footer class="main-footer">
+            
+            <strong>Copyright © 2026 <a href="https://mas.co.in" target="blank">MAS Financial Services Limited</a>.</strong> All rights reserved.
+         </footer>
+         <!-- Control Sidebar -->
+         <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+         </aside>
+         <!-- /.control-sidebar -->
+      </div>
+      <!-- ./wrapper -->
+      <!-- jQuery -->
+      <script src="plugins/jquery/jquery.min.js"></script>
+      <!-- Bootstrap 4 -->
+      <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- AdminLTE App -->
+      <script src="dist/js/adminlte.min.js"></script>
+
+      <!-- AdminLTE for demo purposes -->
+      <script src="dist/js/demo.js"></script>
+
+       <!-- infra js file-->
+      <script src="Images/infra.js"></script>
+
+      
+   </body>
+</html>
